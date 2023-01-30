@@ -23,10 +23,15 @@ const styles = StyleSheet.create({
         margin: 8,
         padding: 8,
         borderRadius: 6,
-        backgroundColor: '#5e0acc'
+        backgroundColor: '#5e0acc',
+        height: '75%',
+        textAlign: 'center'
     },
     goalText: {
-        color: 'white'
+        color: 'white',
+        textAlign: 'center',
+        textAlignVertical: 'center',
+        fontSize: 25
     },
     pressedItem: {
         opacity: 0.5
