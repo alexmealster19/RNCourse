@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     textInput: {
         borderWidth: 1,
         borderColor: '#e4d0ff',
-        backgroundColor: '#e4d0ff',
+        backgroundColor: '#8ad93a',
         width: '70%',
         height: '4%',
         textAlign: 'center',
@@ -74,8 +74,8 @@ const styles = StyleSheet.create({
         marginHorizontal: 2
     },
     image: {
-        height: 100,
-        margin: 20,
-        width: 100
+        height: 250,
+        margin: 25,
+        width: 250
     }
 })

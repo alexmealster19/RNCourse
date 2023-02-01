@@ -34,6 +34,6 @@ const styles = StyleSheet.create({
         fontSize: 25
     },
     pressedItem: {
-        opacity: 0.5
+        opacity: 0.9
     }
 });
