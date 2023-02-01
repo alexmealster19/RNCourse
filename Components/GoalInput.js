@@ -1,5 +1,6 @@
 import { StyleSheet, View, TextInput, Button, Modal, Image } from "react-native";
-import { useState } from "react";
+import { useState, useEffect} from "react";
+import * as SQLite from 'expo-sqlite';
 
 function GoalInput(props) {
 
@@ -17,10 +18,10 @@ function GoalInput(props) {
     return (
         <Modal visible={props.visible} animationType="slide">
             <View style={styles.inputContainer}>
-                <Image style={styles.image} source={require('../assets/images/goal.png')} />
+                <Image style={styles.image} source={require('../assets/images/GTSlogo.png')} />
                 <TextInput
                     style={styles.textInput}
-                    placeholder='Your goal'
+                    placeholder='What did you say?'
                     onChangeText={goalInputHandler}
                     value={enteredGoalText}
                 />
@@ -32,9 +33,9 @@ function GoalInput(props) {
                     </View>
                     <View style={styles.button}>
                         <Button
-                            title='Add goal'
+                            title='Add curse'
                             onPress={addGoalHandler}
-                            color='#b180f0'
+                            color='#000000'
                         />
                     </View>
                 </View>
@@ -52,12 +53,12 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         padding: 16,
-        backgroundColor: '#311b6b'
+        backgroundColor: '#64be7e'
     },
     textInput: {
         borderWidth: 1,
         borderColor: '#e4d0ff',
-        backgroundColor: '#8ad93a',
+        backgroundColor: '#e4d0ff',
         width: '70%',
         height: '4%',
         textAlign: 'center',
@@ -74,8 +75,9 @@ const styles = StyleSheet.create({
         marginHorizontal: 2
     },
     image: {
-        height: 250,
-        margin: 25,
-        width: 250
+        height: 100,
+        margin: 20,
+        width: 100
     }
 })
+
